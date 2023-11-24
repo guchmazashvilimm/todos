@@ -1,0 +1,11 @@
+.AppContainer {
+  width: 100%;
+  max-width: 768px;
+  padding: 0 16px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

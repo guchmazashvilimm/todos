@@ -1,0 +1,16 @@
+.AppAddButton {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+  cursor: pointer;
+  &__Icon {
+    background-color: #6c63ff;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+  }
+}

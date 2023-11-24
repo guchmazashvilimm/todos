@@ -1,0 +1,58 @@
+.AppInput {
+  display: flex;
+  gap: 16px;
+
+  &__Input {
+    position: relative;
+    display: flex;
+    width: 100%;
+    input {
+      width: 100%;
+      outline: none;
+      border-radius: 6px;
+      border: 1px solid #6c63ff;
+      padding: 8px 16px;
+      &::placeholder {
+        color: #c3c1e5;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__Icon {
+    display: flex;
+    position: absolute;
+    content: "";
+    right: 12px;
+    top: 6px;
+    color: #6c63ff;
+    cursor: pointer;
+  }
+
+  &__Select {
+    border: none;
+    background: #6c63ff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    appearance: none;
+    outline: none;
+  }
+
+  &__Button {
+    border: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    outline: none;
+    background: #6c63ff;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+  }
+}

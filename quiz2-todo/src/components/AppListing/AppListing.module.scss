@@ -1,0 +1,70 @@
+.AppListing {
+  padding-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  &__Message {
+    color: #252525;
+    font-size: 20px;
+  }
+
+  &__Item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 12px;
+    width: 100%;
+
+    &.Checked {
+      color: rgba(37, 37, 37, 0.5);
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: 50%;
+        height: 1px;
+        background-color: rgba(37, 37, 37, 0.5);
+      }
+    }
+  }
+
+  &__Checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  &__Title {
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  &__Actions {
+    display: flex;
+    gap: 4px;
+  }
+
+  &__Edit {
+    cursor: pointer;
+    transition: color 0.2s ease;
+    color: #cdcdcd;
+
+    &:hover {
+      color: #6c63ff;
+    }
+  }
+
+  &__Delete {
+    cursor: pointer;
+    transition: color 0.2s ease;
+    color: #cdcdcd;
+
+    &:hover {
+      color: #e50000;
+    }
+  }
+}
